@@ -1,0 +1,7 @@
+C:\Users\Usuario\source\repos\Practica-Temas nuevos\Practica-Temas nuevos\bin\Debug\Practica-Temas nuevos.exe.config
+C:\Users\Usuario\source\repos\Practica-Temas nuevos\Practica-Temas nuevos\bin\Debug\Practica-Temas nuevos.exe
+C:\Users\Usuario\source\repos\Practica-Temas nuevos\Practica-Temas nuevos\bin\Debug\Practica-Temas nuevos.pdb
+C:\Users\Usuario\source\repos\Practica-Temas nuevos\Practica-Temas nuevos\obj\Debug\Practica-Temas nuevos.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\Practica-Temas nuevos\Practica-Temas nuevos\obj\Debug\Practica-Temas nuevos.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Practica-Temas nuevos\Practica-Temas nuevos\obj\Debug\Practica-Temas nuevos.exe
+C:\Users\Usuario\source\repos\Practica-Temas nuevos\Practica-Temas nuevos\obj\Debug\Practica-Temas nuevos.pdb
