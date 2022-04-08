@@ -23,6 +23,8 @@ namespace logica
                     palabras++;
                 }
             }
+
+            //se puede usar texto.Split(" ").Length 
             return palabras;
         }
     }
@@ -32,7 +34,7 @@ namespace logica
         public static decimal RetornarDiferenciaEnMinutos(this DateTime f1, DateTime f2)
         {
             decimal DiferenciaEnSegundos = f1.Second - f2.Second;
-            return DiferenciaEnSegundos / 60;
+            return DiferenciaEnSegundos / 60; // se puede hacer en una sola linea
         }
 
 
@@ -47,6 +49,8 @@ namespace logica
                 Cont += 1;
             }
             prom = Sum / Cont;
+
+            //Se puede usar lista.Average()
             return prom;
         }
         public static int DevolverOperacion(this List<int> Enteros)
@@ -61,6 +65,8 @@ namespace logica
                     RestaImpares = RestaImpares - item;
             }
             int multiplicacion = RestaImpares * SumaPares;
+
+            //Se puede usar expresiones lambda como var pares = lista.Where(x=> x % 2 == 0)
             return multiplicacion;
         }
         public static DateTime RetornarEnFormato(string fecha)
@@ -79,6 +85,7 @@ namespace logica
         public static string SepararStringConChar(this string[] frase, char separador)
         {
             string FraseUnida = string.Join("separador", separador, frase);
+            //La forma correcta es esta: string FraseUnida = string.Join(separador, frase);
             return FraseUnida;
         }
         public static bool EsCuit(this string CUIT, out string CUITLimpio)
@@ -94,6 +101,9 @@ namespace logica
                 CUITLimpio = string.Concat(CUITLimpio, match.Value);
             }
             rx = new Regex(RegexPatternCuit, RegexOptions.Compiled);
+
+            //NO hace falta limpiar el cuit, hay que devolver true o false si el cuit es valido y no mas
+
             return rx.Match(CUITLimpio).Success;
 
         }
@@ -101,6 +111,9 @@ namespace logica
         {
             string Expresion;
             Expresion = "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+
+            //con return Regex.IsMatch(Correo, Expresion) es suficiente
+
             if (Regex.IsMatch(Correo, Expresion))
             {
                 if (Regex.Replace(Correo, Expresion, String.Empty).Length == 0)
@@ -117,7 +130,7 @@ namespace logica
                 return false;
             }
         }
-        public static int RestaEnteros(this int n1, int n2)
+        public static int RestaEnteros(this int n1, int n2) //definir nombres correctos a los parametros
         {
             return n2 - n1;
         }
@@ -126,7 +139,7 @@ namespace logica
     {
         public static double FarenheitACelsius(this double Farenheit)
         {
-            double Celsius = Farenheit / 2.12;
+            double Celsius = Farenheit / 2.12; //2.12 podria ser una constante para no duplicar codigo
             return Celsius;
         }
         public static double CelsiusAFarenheit(this double Celsius)
